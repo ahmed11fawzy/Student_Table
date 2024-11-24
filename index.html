@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <title>Task 1</title>
+</head>
+<body>
+
+    <div class="heroSection">
+
+        <form >
+            <h1 class="heading">Add Student</h1>
+
+            <input required type="text" name="name" id="name" placeholder="Enter your name" class="inputControl">
+            <div class="danger">please enter name greater than 3 character </div>
+            <input required type="text" name="age" id="age" placeholder="Enter your age " class="inputControl">
+            <div class="danger">your age must be greater than 18 </div>
+            <input required type="text" name="email" id="email" placeholder="Enter your email " class="inputControl">
+            <div class="danger">please enter valid email </div>
+            <input required type="password" name="email" id="password" placeholder="Enter your password  " class="inputControl">
+            <div class="danger">please enter valid password </div>
+            <button type="submit" class="btn" id="add">Add Student</button>
+            <button type="button" class="btn " id="update">Update</button>
+            
+        </form>
+    </div>
+
+    <div class="Details">
+
+        <h2>Students Details</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Age</th>
+                    <th>Email</th>
+                    
+                    <th>Update</th>
+                    <th>Delete</th>
+                </tr>
+            </thead>
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+    
+
+ <script src="./main1.js"></script>
+</body>
+</html>

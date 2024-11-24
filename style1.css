@@ -1,0 +1,144 @@
+:root{
+    --heroColor:#111;
+    --btnColor:rgba(117, 117, 117,1);
+    --textColor:#eee;
+    --headingColor:#697565;
+    --updatingColor:#0dcaf0;
+    --deletingColor:#dc3545;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heroSection{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #111;
+    color: #fff;
+}
+.heading{
+    text-align: center;
+    margin-bottom: 30px;
+    color:#ECDFCC;
+}
+
+form{
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.973) 0px 3px 8px;
+    width: 40%;
+    height: 80%;
+    background-color:#1111110c ;
+}
+
+
+.inputControl{
+    padding: 10px;
+    border-radius: 5px;
+    background: transparent;
+    color: var(--textColor);
+    border: .3px solid var(--headingColor);
+    outline: none;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: start;
+}
+.inputControl:focus{
+    color: var(--textColor);
+}
+
+
+.btn{
+    background-color:  var(--headingColor);
+    display: block;
+    padding: 10px;
+    border-radius: 5px;
+    background: transparent;
+    color: var(--btnColor);
+    box-shadow: rgba(0, 0, 0, 0.973) 0px 3px 8px;
+    margin: 20px 0;
+    width: 100%;
+    font-size: 1.2rem;
+    text-align: center;
+    cursor: pointer;
+    text-transform: capitalize;
+    border:none;
+}
+.btn:hover{
+    box-shadow: rgba(0, 0, 0, 0.973) 0px 3px 8px;
+    border: .5px solid #eeeeee00;
+    color: var(--textColor);
+    background-color: var(--headingColor);
+}
+
+
+.Details{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--heroColor);
+    padding-top: 50px;
+    color:var(--textColor);
+}
+.Details h2{
+    margin-bottom: 30px;
+}
+table{
+    width: 80%;
+    margin-bottom: 30px;
+}
+thead{
+    
+    background-color: var(--headingColor);
+}
+
+th{
+    padding: 10px;
+    font-size: 1.2rem;
+    text-align: center;
+}
+td{
+    padding-inline: 5px;
+}
+
+
+.error{
+    color:var(--deletingColor) !important;
+    border:.5px solid var(--deletingColor);
+}
+.danger{
+    display: none;
+    color: var(--deletingColor) !important;
+    
+    padding-inline: 20px;
+}
+
+
+
+.btn-info{
+    background-color: var(--updatingColor) !important;
+}
+.btn-danger{
+    background-color: var(--deletingColor) !important;
+}
+
+
+#update{
+    border-color: var(--updatingColor);
+    display: none;
+}
+
+#update:hover{
+    box-shadow: #0dcaf038 0px 3px 5px;
+    border: .5px solid #eeeeee00;
+    color: var(--textColor);
+    background-color: var(--updatingColor);
+    
+}
